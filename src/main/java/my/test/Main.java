@@ -44,14 +44,13 @@ public class Main {
                     throw new IllegalArgumentException("Should be a number: " + args[0]);
                 }
                 result = (int) Math.floor(input);
-                if (result <= 0) {
-                    throw new IllegalArgumentException("Input value is either too big or less or equal to 0");
+                if (result <= 1) {
+                    throw new IllegalArgumentException("Input value is either too big or less or equal to 1");
                 }
             }
             return result;
         }
     }
-
 
 
 }
